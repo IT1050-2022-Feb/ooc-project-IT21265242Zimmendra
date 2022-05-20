@@ -4,7 +4,7 @@
 #include"customer.h"
 using namespace std;
 
-Customer::Customer()
+Customer::Customer()//implemnet constructor
 {
 	number_of_guest = 0;
 	strcpy(date, "");
@@ -12,7 +12,7 @@ Customer::Customer()
 	strcpy(name_of_the_bride, "");
 }
 
-Customer::Customer(int noofguest, char CID[], char dateofwedding[], char nameofthegroom[], char nameofthebride[], char username[], char password[], char email[], char contact_info[]) :User(username, password, email, contact_info)
+Customer::Customer(int noofguest, char CID[], char dateofwedding[], char nameofthegroom[], char nameofthebride[], char username[], char password[], char email[], char contact_info[]) :User(username, password, email, contact_info)//implement overloaded constructor
 {
 	number_of_guest=noofguest;
 	strcpy(date, dateofwedding);
@@ -21,7 +21,7 @@ Customer::Customer(int noofguest, char CID[], char dateofwedding[], char nameoft
   strcpy(customer_ID, CID);
 }
 
-Customer::~Customer()//implemnet constructor
+Customer::~Customer()//implement destructor
 {
 	cout << "Cart destroyed " << endl;
 }

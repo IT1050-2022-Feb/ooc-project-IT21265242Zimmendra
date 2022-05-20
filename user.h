@@ -1,4 +1,6 @@
 #pragma once
+
+//create class
 class User
 {
 protected:

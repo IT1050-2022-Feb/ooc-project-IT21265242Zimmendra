@@ -1,7 +1,7 @@
 #include "customer.h"
 class Order
 {
-private:
+private:l
   char Order_ID[5];
   double Order_Amount;
   char Order_Date[8];

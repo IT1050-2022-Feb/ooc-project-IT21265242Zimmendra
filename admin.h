@@ -1,5 +1,6 @@
 #include"user.h"
 
+//create class
 class Admin : public User
 {
 	protected:

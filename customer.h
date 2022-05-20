@@ -4,6 +4,7 @@
 //#include"order.h"
 //#include"cart.h"
 
+//create the class
 class Customer : public User
 {
 protected:

@@ -1,4 +1,4 @@
-
+//create class 
 class package
 {
 private:
@@ -7,14 +7,14 @@ private:
 	char package_id[10];
 	
 public: 
-	package();
-	package(char pname[], char pid[]);
-	void setpackagename(char pname[]);
-	char getpackagename();
+	package();//constructor
+	package(char pname[], char pid[]);//overloaded costructor
+	void setpackagename(char pname[]);//setter
+	char getpackagename();//getter
 	
-	void setpackageid(char pid[]);
-	char getpackageid();
+	void setpackageid(char pid[]);//setter
+	char getpackageid();//getter
 
-	~package();
+	~package();//destructor
 };
 

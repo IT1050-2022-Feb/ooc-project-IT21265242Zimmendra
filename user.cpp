@@ -3,7 +3,7 @@
 #include"user.h"
 using namespace std;
 
-User::User()
+User::User()//implement constructor
 {
 	strcpy(username, "");
 	strcpy(password, "");
@@ -11,7 +11,7 @@ User::User()
 	strcpy(contact_info, "");
 }
 
-User::User(char uname[], char pword[], char e_mail[], char cinfo[])
+User::User(char uname[], char pword[], char e_mail[], char cinfo[])//implement overloaded constructor
 {
 	strcpy(username,uname);
 	strcpy(password, pword);
@@ -19,7 +19,7 @@ User::User(char uname[], char pword[], char e_mail[], char cinfo[])
 	strcpy(contact_info,cinfo);
 }
 
-User::~User()
+User::~User()//implement destructor
 {
 	cout << "User log out " << endl;
 }
