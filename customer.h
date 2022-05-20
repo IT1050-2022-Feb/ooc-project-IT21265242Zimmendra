@@ -1,3 +1,4 @@
+#pragma once
 #include "user.h"
 //#include"feedback.h"
 //#include"order.h"
@@ -7,6 +8,7 @@ class Customer : public User
 {
 protected:
 	int number_of_guest;
+  char customer_ID[5];
 	char date[10];
 	char name_of_the_groom[35];
 	char name_of_the_bride[35];
@@ -16,7 +18,7 @@ protected:
 
 public:
 	Customer(); // constructor
-	Customer(int noofguest, char dateofwedding[], char nameofthegroom[], char nameofthebride[] , char username[], char password[], char email[], char contact_info[]); // overloaded constructor for registration
+	Customer(int noofguest, char CID[], char dateofwedding[], char nameofthegroom[], char nameofthebride[] , char username[], char password[], char email[], char contact_info[]); // overloaded constructor for registration
 
 	void setnumberofguest(int noofguest); // setter for number of guest
 	int getnumberofguest(); // getter for number of guest
@@ -29,6 +31,9 @@ public:
 
 	void setnameofbride(char nameofthebride[]); // setter for name of the bride
 	char* getnameofbride(); // getter for name of the bride
+
+  void setcid(char cid[]); // setter for customer ID
+  char* getcid(); // getter for customer ID
 
 	~Customer(); // destructor called for registered customer
 };
