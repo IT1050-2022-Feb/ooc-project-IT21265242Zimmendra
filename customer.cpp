@@ -21,7 +21,7 @@ Customer::Customer(int noofguest, char CID[], char dateofwedding[], char nameoft
   strcpy(customer_ID, CID);
 }
 
-Customer::~Customer()
+Customer::~Customer()//implemnet constructor
 {
 	cout << "Cart destroyed " << endl;
 }

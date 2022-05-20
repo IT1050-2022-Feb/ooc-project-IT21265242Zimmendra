@@ -6,7 +6,7 @@ class Admin : public User
 		char admin_ID[6];
 
 	public:
-		Admin();
+		Admin(); // conrructor called for registered Admin
 		Admin(char adID[], char username[], char password[], char email[], char contact_info[]); // overloaded constructor for registration
 		
 		void setadminID(char adID[]); // setter for admin ID
